@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: "nexa_bold", sans-serif;
     text-transform: uppercase;
     border-radius: 50px;
+    text-decoration: none;
 }
 
 header{
@@ -62,6 +63,9 @@ ul{
 li{
     display: block;
 }
+.d-flex{
+    display: flex;
+}
 header a{
     text-decoration: none;
     color: white;
@@ -75,9 +79,8 @@ header nav a.btn{
     padding: 21px 42px;
     margin-left: 590px;
 }
-header .content{
+header .d-flex{
     margin-top: 55px;
-    display: flex;
 }
 header .text{
     margin-top: 170px;
@@ -97,13 +100,61 @@ header p{
     margin-bottom: 75px;
     line-height: 36px;
 }
-header .content .btn{
+header .d-flex .btn{
     padding: 27px 64px;
     background: #00dadc;
     color: #171718;
 }
-header .content img{
-    
+header .d-flex img{
     width: 869px;
     height: 680px;
+    transform: scale(0.8);
+}
+section.about{
+    position: relative;
+}
+section.about .d-flex{
+    margin-top: 115px;
+    position: relative;
+}
+section.about .d-flex img{
+    height: 815px;
+    width: 700px;
+    margin-right: 75px;
+    position: relative;
+    left: -75px;
+}
+section.about .text{
+    margin-top: 150px;
+    width: 540px;
+}
+section.about h5{
+    font-size: 30px;
+    letter-spacing: 7px;
+    color: #6426dd;
+    text-transform: uppercase;
+}
+section.about h2{
+    font-size: 70px;
+    line-height: 66px;
+    letter-spacing: 0.004em;
+    margin-top: 35px;
+    color: #25234d;
+}
+section.about p{
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 75px;
+    color: #5a5878;
+}
+section.about .btn{
+    background: #ffc727;
+    padding: 27px 75px;
+    color: #171718;
+}
+section.about img.elements{
+    right: 0;
+    top: -115px;
+    position: absolute;
 }
