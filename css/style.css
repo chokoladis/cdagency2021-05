@@ -119,36 +119,35 @@ section.about .d-flex{
 }
 section.about .d-flex img{
     height: 815px;
-    width: 700px;
-    margin-right: 75px;
+    margin-right: 150px;
     position: relative;
-    left: -75px;
+    margin-left: -75px;
 }
 section.about .text{
     margin-top: 150px;
-    width: 540px;
 }
-section.about h5{
+section h5{
     font-size: 30px;
-    letter-spacing: 7px;
+    letter-spacing: 6px;
     color: #6426dd;
     text-transform: uppercase;
 }
-section.about h2{
+section h2{
     font-size: 70px;
     line-height: 66px;
     letter-spacing: 0.004em;
     margin-top: 35px;
     color: #25234d;
 }
-section.about p{
+section p{
     margin-top: 40px;
     font-size: 20px;
     line-height: 36px;
     margin-bottom: 75px;
+    width: 530px;
     color: #5a5878;
 }
-section.about .btn{
+section .btn{
     background: #ffc727;
     padding: 27px 75px;
     color: #171718;
@@ -157,4 +156,58 @@ section.about img.elements{
     right: 0;
     top: -115px;
     position: absolute;
+}
+.services{
+    background: url(../img/image_3screen.png) no-repeat top center / cover;
+    height: 1100px;
+}
+.services .d-flex{
+    top: 410px;
+    position: relative;
+    
+}
+.services .text{
+    width: 610px;
+    margin-right: 150px;
+}
+.services .cards{
+    
+    width: 550px;
+    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 150px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card{
+    width: 240px;
+    height: 240px;
+    box-shadow: 1px 0px 23px rgb(222, 222, 226);
+    padding: 53px 30px 59px;
+    
+}
+.card h6{
+    color: #535273;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.card p{
+    width: 100%;
+    font-size: 18px;
+    color: #4e4c6f;
+    line-height: 32px;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.card:nth-child(2){
+    top: -128px;
+    position: relative;
+}
+.card:nth-child(3){
+    top: -110px;
+    position: relative;
+}
+.card:nth-child(4){
+    top: -234px;
+    position: relative;
 }
