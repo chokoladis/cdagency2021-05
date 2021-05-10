@@ -138,6 +138,7 @@ section h2{
     letter-spacing: 0.004em;
     margin-top: 35px;
     color: #25234d;
+    font-family: "nexa_bold",sans-serif;
 }
 section p{
     margin-top: 40px;
@@ -210,4 +211,120 @@ section.about img.elements{
 .card:nth-child(4){
     top: -234px;
     position: relative;
+}
+.feedback{
+    background:url(../img/bg_4screen.png) no-repeat top center / cover;
+    margin-top: 230px;
+    position: relative;
+    color: white;
+    height: 1105px;
+}
+.feedback .oval{
+    position: absolute;
+    top: -70px;
+}
+.feedback .container{
+    text-align: center;
+    position: relative;
+}
+.feedback span {
+    font-size: 30px;
+    font-family: "nexa_regular", sans-serif;
+    letter-spacing: 6px;
+    margin-top: 150px;
+    display: inline-block;
+    
+}
+.feedback h2{
+    font-size: 70px;
+    color: white;
+    margin-top: 25px;
+}
+.feedback .feedback_lists{
+    margin: 0px auto;
+    position: relative;
+    margin-top: 100px;
+    width: 870px;
+    height: 480px;
+    background: url(../img/Shape_4scr.png) no-repeat top center / cover;
+}
+.feedback .feedback_list{  
+    width: 570px;  
+    height: 400px;
+    background: white;
+    border-radius: 20px;
+    margin: 0px auto;
+    padding:  15px 80px;
+    position: relative;
+    z-index: 4;
+}
+.feedback .feedback_list .quote{
+    position: absolute;
+    margin: 0px auto;
+    z-index: 1;
+    right: 0;
+    left: 0;
+}
+.feedback .feedback_list p{
+    line-height: 40px ;
+    z-index: 2;
+    color: #6a697f;
+    position: relative;
+    margin: 0;
+    margin-top: 65px;
+    width: 550px;
+    
+}
+.feedback .name{
+    margin-top: 40px;
+    color: #6427de;
+    font-size: 24px;
+    font-family: "nexa_bold",sans-serif;
+}
+.feedback .stars{
+    width: 145px;
+    margin: 0px auto;
+    margin-top: 15px;
+    justify-content: space-around;
+    
+}
+.feedback .stars img{
+    position: relative !important;
+}
+.feedback .arrows{
+    margin: 0px auto;
+    margin-top: 40px;
+    width: 120px;
+    justify-content: space-around;
+}
+.feedback .arrows .btn_arrow{
+    padding: 14px 16px;
+    border: 2px solid #6a697f;
+    border-radius: 50px;
+}
+.feedback .arrows .btn_arrow:nth-child(2){
+    background: #00dadc;
+    border: 2px solid #00dadc;
+}
+.feedback_list:nth-child(2){
+    opacity: 0.7;
+    transform: scale(0.95);
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    left: 0;
+    top: 40px;
+    
+}
+.feedback_list:nth-child(3){
+    opacity: 0.4;
+    transform: scale(0.9);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 70px;
+    z-index: 2;
+}
+.contact{
+    margin-top: 95px;
 }
