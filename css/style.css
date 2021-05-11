@@ -425,3 +425,49 @@ form .btn{
     right: 85px;
     z-index: 2;
 }
+footer{
+    background:url(../img/bg_footer.png) no-repeat top center / cover;
+    height: 395px;
+    margin-top: 120px;
+    color: white;
+}
+footer h4{
+    font-family: "gilroy", sans-serif;
+    font-size: 45px;
+}
+footer nav {
+    display: flex;
+    padding-top: 200px;
+    align-content: center;
+    justify-content: space-between;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 19px;
+}
+footer .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 195px;
+}
+footer .icon {
+	background: #6f7efd;
+	width: 40px;
+	height: 40px;
+	display: inline-grid;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+    cursor: pointer;
+}
+.icon:hover{
+    background: #00dadc;
+}
+footer p{
+    text-align: center;
+    margin-top: 80px;
+    
+}
