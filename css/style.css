@@ -39,16 +39,18 @@ header{
     background: url(../img/bg.png) no-repeat top center / cover;
     color: white;
     height: 1005px;
+    overflow: hidden;
 }
 header h4{
     font-family: "gilroy", sans-serif;
     font-size: 45px;
-    margin-right: 110px;
 }
 header nav {
     display: flex;
     padding-top: 39px;
     align-content: center;
+    justify-content: space-between;
+    
 }
 ul,li{
     margin: 0;
@@ -62,7 +64,31 @@ ul{
 }
 li{
     display: block;
+    position: relative;
 }
+
+/*hover li*/
+li::before{
+    content: " ";
+    padding: 5px;
+    background: #ffc727;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -30px;
+    right: -15px;
+    transition: all .3s;
+    opacity: 0;
+}
+li:hover::before{
+    transition: all .3s;
+    bottom: 7px;
+    opacity: 1;
+}
+li:hover a{
+    color: #ffc727;
+}
+/*hover li*/
+
 .d-flex{
     display: flex;
 }
@@ -77,8 +103,20 @@ header nav a.btn{
     color: #6426dd;
     font-size: 16.8px;
     padding: 21px 42px;
-    margin-left: 590px;
 }
+
+/*hover a.btn*/
+nav .btn{
+    box-shadow: 0px 0px 20px #b1b1b1;
+    transform: scale(1);
+}
+nav .btn:hover{
+    background: #6426dd ;
+    color: white;
+    box-shadow: 0px 0px 20px #7318e9;
+    transform: scale(1.02);
+}
+/*hover a.btn*/
 header .d-flex{
     margin-top: 55px;
 }
@@ -104,7 +142,14 @@ header .d-flex .btn{
     padding: 27px 64px;
     background: #00dadc;
     color: #171718;
+    transition: all .3s;
 }
+/*hover a.btn*/
+header .d-flex .btn:hover{
+    color: #00dadc;
+    background: #171718;
+}
+/*hover a.btn*/
 header .d-flex img{
     width: 869px;
     height: 680px;
@@ -149,9 +194,19 @@ section p{
     color: #5a5878;
 }
 section .btn{
+    transition: all .3s;
     background: #ffc727;
     padding: 27px 75px;
     color: #171718;
+    transform: scale(0.9);
+    border: 3px solid #ffc727;
+    
+}
+section a.btn:hover{
+    background: transparent;
+    border: 3px solid rgb(14, 212, 238);
+    color: rgb(14, 212, 238);
+    transform: scale(1.0) !important;
 }
 section.about img.elements{
     right: 0;
@@ -365,7 +420,7 @@ section.about img.elements{
     height: 77px;
 }
 
-input {
+input,textarea {
     font-size: 20px;
     display: block;
     width: 395px;
@@ -376,7 +431,7 @@ input {
     height: 17px;
     font-family: "nexa_bold", sans-serif;
 }
-input:focus {
+input:focus,textarea:focus {
   outline: none;
 }
 label {
@@ -394,11 +449,15 @@ label {
     text-align: left;
 }
 
-input:focus ~ label, input:valid ~ label{
-    top: -12px;
+textarea:focus ~ label,textarea:valid ~ label, input:focus ~ label, input:valid ~ label{
+    top: -12px ;
 }
-.group:nth-child(3) input {
+textarea {
     height: 140px;
+    max-height: 170px;
+    max-width: 395px;
+    min-width: 200px;
+    min-height: 70px;
 }
 /* 
 input[type="email"]:invalid ~ label{
