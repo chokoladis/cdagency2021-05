@@ -466,7 +466,7 @@ input[type="email"]:invalid ~ label{
 }
 */
 form .btn{
-    padding: 25px 100px;
+    padding: 24px 100px 26px;
     color: #171718;
     margin: 0px auto;
     margin-top: 170px;
@@ -475,6 +475,15 @@ form .btn{
     width: 70px;
     height: 14px;
     box-sizing: content-box;
+    transform: scale(0.93);
+    cursor: pointer;
+    box-shadow: 0px 2px 13px rgb(233, 180, 5);
+}
+form .btn:hover{
+    transform: scale(1);
+    color: white;
+    background: turquoise;
+    box-shadow: 0px 1px 6px rgba(45, 171, 255, 0.726);
 }
 .contact form:nth-child(3){
     transform: scale(0.9);
