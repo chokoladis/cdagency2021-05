@@ -780,26 +780,70 @@ footer p{
     }
     .cards{
         margin: 0;
-        display: flex;
+        display: block !important;
         grid-gap: unset;
         grid-template-columns: unset;
         margin-top: 80px;
         flex-direction: unset;
-        width: 100%;
+        width: 100% !important;
+        height: inherit;
     }
     .card{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 100%;
-        
-        align-content: space-between;
+        width: 80%;
+        height: 160px;
+
     }
     .card img{
-        height: 90%;
+        
+        width: 120px;
+        margin: auto 0px;
     }
     .card h6,.card p{
         width: 50%;
+    }
+    .card p{
+        margin: 0;
+        width: 70%;
+    }
+    .card:nth-child(2), .card:nth-child(3),.card:nth-child(4){
+        top: 0;
+        margin: 20px auto;
+    }
+    .feedback{
+        margin-top: 500px;
+        height: none !important;
+    }
+    .feedback .feedback_lists{
+        width: 90%;
+        height: inherit;
+        margin: 20px auto;
+        margin-top: 100px;
+    }
+    .feedback .feedback_list {
+        width: 100%;
+    }
+    .feedback .feedback_list .quote {
+        width: 40%;
+    }
+    .feedback .feedback_list p{
+        width: 100%;
+    }
+    .feedback .name {
+        margin-top: 25px;
+    }
+    .feedback .stars {
+        margin-top: 10px;
+    }
+    .contact .text {
+        margin-top: 0;
+    }
+    .contact .d-flex img{
+        right: -80px;
+        top: 400px;
+        transform: scale(0.8);
     }
 }
 @media screen and (max-width:575px){
